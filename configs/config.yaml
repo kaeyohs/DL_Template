@@ -1,0 +1,13 @@
+defaults:
+  - data: default
+  - model: default
+  - train: default
+  - _self_
+
+seed: 42
+
+# Keep the process CWD at the project root so relative paths (data/, checkpoints/,
+# runs/) resolve consistently. Hydra still writes a per-run snapshot under outputs/.
+hydra:
+  job:
+    chdir: false

@@ -1,0 +1,20 @@
+{
+  "name": "DL_Template",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "dev",
+  "workspaceFolder": "/workspace",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "charliermarsh.ruff",
+        "ms-toolsai.jupyter"
+      ],
+      "settings": {
+        "python.defaultInterpreterPath": "/opt/venv/bin/python"
+      }
+    }
+  },
+  "postCreateCommand": "uv sync --group dev && uv run pre-commit install",
+  "remoteUser": "root"
+}

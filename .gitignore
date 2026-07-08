@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+
+# Virtual environments / uv
+.venv/
+
+# Hydra run outputs
+outputs/
+multirun/
+
+# Training artifacts
+checkpoints/
+runs/
+data/*
+!data/.gitkeep
+
+# Testing / linting
+.pytest_cache/
+.ruff_cache/
+
+# Editors
+.vscode/
+.idea/

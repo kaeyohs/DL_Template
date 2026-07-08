@@ -1,0 +1,6 @@
+root: data
+batch_size: 32
+num_workers: 4
+
+# Where data_download.py fetches the raw dataset from
+source_url: null
